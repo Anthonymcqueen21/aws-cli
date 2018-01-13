@@ -37,11 +37,8 @@ PACKAGE_VERSION = {
 }
 INSTALL_ARGS = '--allow-all-external --no-use-wheel'
 
-
 class BadRCError(Exception):
     pass
-
-
 @contextmanager
 def cd(dirname):
     original = os.getcwd()
